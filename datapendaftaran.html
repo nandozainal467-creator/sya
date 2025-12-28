@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Pendaftaran Peserta</title>
+
+<style>
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0a1f44, #123d7a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-box {
+  width: 420px;
+  background: linear-gradient(180deg, #fff8e1, #fdf6d2);
+  border-radius: 18px;
+  padding: 35px;
+  box-shadow: 0 0 40px rgba(212,175,55,0.6);
+  border: 2px solid #d4af37;
+}
+
+.form-box h2 {
+  text-align: center;
+  color: #0a1f44;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.form-box p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #c9b037;
+  font-size: 14px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #0a1f44;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #d4af37, #f5d76e);
+  color: #0a1f44;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(212,175,55,0.8);
+}
+
+.footer {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 12px;
+  color: #666;
+}
+</style>
+</head>
+
+<body>
+
+<div class="form-box">
+  <h2>Pendaftaran Peserta</h2>
+  <p>Silakan isi data dengan benar</p>
+
+  <form action="https://script.google.com/macros/s/AKfycbwoQ1XYBSefvCqK360lCOfTc8Ior37njAjrZ3d1CMfw-Dyq0b5NMH7NQDPggEtTMRCA6Q/exec" method="POST">
+    <input type="text" name="nama" placeholder="Nama Lengkap" required>
+    <input type="email" name="email" placeholder="Email Aktif" required>
+    <input type="text" name="hp" placeholder="Nomor HP / WhatsApp" required>
+    <input type="text" name="sekolah" placeholder="Asal Sekolah" required>
+    <textarea name="alamat" rows="3" placeholder="Alamat Lengkap" required></textarea>
+
+    <button type="submit">Kirim Pendaftaran</button>
+  </form>
+
+  <div class="footer">
+    © 2025 • Sistem Pendaftaran
+  </div>
+</div>
+
+</body>
+</html>
